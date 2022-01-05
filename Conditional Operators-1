@@ -1,0 +1,14 @@
+Perform the following tasks: Create a vector V Fill them with the values based on the vector temp (passed as arguments).
+if temp[i]>100 then fill V[i] with the string "Hot" else fill it with "Normal"
+
+
+condition<-function(temp){
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+V<-ifelse(temp>100,"Hot","Normal")
+
+return(V)
+}
+print(condition(c(102,98,67,115)))
+print(condition(c(89,125)))
+print(condition(c(99,45,56)))
