@@ -1,15 +1,10 @@
+Find the factor of the vector V passed as function arguments and assign the number of levels to the variable ans.
+
 level<-function(V){
-    
-
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-factor(c(V))
-ans<-nlevel(ans)
-
+ans<-nlevels(factor(V))
 return(ans)
 }
-
-
 print(level(c("Red","Green","Blue")))
 print(level(c("Single","Married")))
 print(level(c("Apple","Apple","Orange","Mango")))
-
