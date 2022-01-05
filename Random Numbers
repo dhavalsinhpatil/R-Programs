@@ -1,0 +1,9 @@
+sequence_gen<-function(a,b){
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+ans<-rep(seq(a,b,2),times=2)
+
+return(ans)
+}
+print(sequence_gen(10,20))
+print(sequence_gen(28,45))
