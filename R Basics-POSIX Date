@@ -1,0 +1,13 @@
+Convert the variable strings Y and X (passed as function arguments) into POSIX Date format.
+
+elapsed_days<-function(X,Y){
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+xDate<- as.Date(X,"%d%B%Y")
+yDate<- as.Date(Y,"%d%B%Y")
+ans<-difftime(as.POSIXct(xDate), as.POSIXct(yDate))
+
+return (ans)
+}
+print(elapsed_days("15Jan2020","12Dec1983"))
+print(elapsed_days("18Aug2021","18Aug1995"))
