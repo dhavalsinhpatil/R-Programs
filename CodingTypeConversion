@@ -1,0 +1,11 @@
+Check the data type of the variable K passed as the function argument. If it is not an integer, convert it into an integer and assign it to ans.
+
+convert<-function(K){
+
+ans<- as.integer(K)
+
+return (ans)
+}
+print(convert(2.7))
+print(convert(3.456))
+print(convert(4.1))
