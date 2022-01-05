@@ -1,0 +1,12 @@
+Convert the string S in the function parameter to a valid date format "yyy-mm-dd" and assign it to ans.
+
+
+convert_date<-function(S){
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+ans <- as.Date(S,"%d%m%Y")
+return(ans)
+}
+print(convert_date("15081947"))
+print(convert_date("18081995"))
+print(convert_date("04021967"))
+print(convert_date("06091969"))
