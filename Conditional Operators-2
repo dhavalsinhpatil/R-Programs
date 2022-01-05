@@ -1,0 +1,9 @@
+Build a condition to check if all the numbers in the vector marks (passed as arguments) are greater than 90. 
+If yes, assign the string "Best Class" to the variable ans, else assign "Needs Improvement"
+
+classmark <- function(marks) {
+    ans <- ifelse(any(marks <= 90), "Needs Improvement", "Best Class")
+    return(ans)   
+}
+print(classmark(c(100,95,94,56)))
+print(classmark(c(100,95,94,96)))
